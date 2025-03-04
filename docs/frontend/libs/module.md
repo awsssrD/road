@@ -52,18 +52,18 @@ ESM 的基本目的是让 JavaScript 支持模块化，使得代码更加模块�
 
 这种模式可以作为项目中组件的默认导出和声明
 
-```js
+```js [app.js]
 // app.js
 import { add } from "./index.js";
 add(1, 2);
 ```
 
-```js
+```js [index.js]
 // index.js
 export { add } from "./add.js";
 ```
 
-```js
+```js [add.js]
 // add.js
 export function add(num1, num2) {
   return num1 + num2;
